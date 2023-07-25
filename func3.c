@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_pointer - Prints the value of a pointer variable
- * @types: List a of arguments
+ * print_pointer - function Prints the value of a pointer variable
+ * @types: List all arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
  * @width: get width
- * @precision: Precision specification
+ * @flags:  Count active flags
+ * @precision: Precision specifier
  * @size: Size specifier
  * Return: Number of chars printed.
  */
@@ -46,18 +46,18 @@ int print_pointer(va_list types, char buffer[],
 
 	ind++;
 
-	/*return (write(1, &buffer[i], BUFF_SIZE - i - 1));*/
+	/*return (write(1, &buffer[i], BUFF_SIZE -));*/
 	return (write_pointer(buffer, ind, length,
 		width, flags, padd, extra_c, padd_start));
 }
 
 /**
  * print_non_printable - Prints ascii codes in hexa of non printable chars
- * @types: Lista of arguments
+ * @types: Lista all arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags:  Count active flags
  * @width: get width
- * @precision: Precision specification
+ * @precision: Precision specifier
  * @size: Size specifier
  * Return: Number of chars printed
  */
@@ -91,12 +91,12 @@ int print_non_printable(va_list types, char buffer[],
 }
 
 /**
- * print_reverse - Prints reverse string.
- * @types: Lista of arguments
+ * print_reverse - Show reverse string.
+ * @types: Lista all arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags:  Count active flags
  * @width: get width
- * @precision: Precision specification
+ * @precision: Precision specifier
  * @size: Size specifier
  * Return: Numbers of chars printed
  */
@@ -134,7 +134,7 @@ int print_reverse(va_list types, char buffer[],
 }
 /**
  * print_rot13string - Print a string in rot13.
- * @types: Lista of arguments
+ * @types: Lista all arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width

@@ -1,5 +1,15 @@
 #include "main.h"
 /**
+ * print_binary - Prints an unsigned integer in binary format.
+ * @n: The unsigned int to be printed in binary.
+ */
+void print_binary(unsigned int n)
+{
+	if (n > 1)
+		print_binary(n >> 1);
+	_putchar((n & 1) + '0');
+}
+/**
  * _printf - Prints output according to a format.
  * @format: A character string containing zero or more directives.
  * Return: The number of characters printed (excluding the null byte).
@@ -32,6 +42,9 @@ int _printf(const char *format, ...)
 					break;
 				case '%':
 					printed_chars += _putchar('%');
+					break;
+				case 'b':
+					print_binary(va_arg(args, unsigned int));
 					break;
 				default:
 					printed_chars += _putchar('%');

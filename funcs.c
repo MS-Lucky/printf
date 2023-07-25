@@ -2,7 +2,7 @@
 
 /**
  * print_char - Prints a char
- * @types: List a of arguments
+ * @types: List all arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: Width
@@ -73,10 +73,10 @@ int print_string(va_list types, char buffer[],
 }
 /**
  * print_percent - Prints a percent sign
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width.
+ * @types: Lista all arguments
+ * @buffer: Buffer an array to handle print
+ * @flags:  Count active flags
+ * @width: View width.
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
